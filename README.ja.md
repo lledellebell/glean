@@ -7,7 +7,9 @@ GleanはClaude Codeセッションから自動的に知識を収穫し、間隔�
 [English](./README.md) | [Español](./README.es.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/@deeeep/glean.svg)](https://www.npmjs.com/package/@deeeep/glean)
 [![Tests](https://img.shields.io/badge/tests-61%20passing-brightgreen.svg)]()
+[![DeepWiki](https://img.shields.io/badge/DeepWiki-ドキュメント-blue.svg)](https://deepwiki.com/lledellebell/glean)
 
 ## 問題
 

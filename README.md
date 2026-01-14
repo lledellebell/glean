@@ -7,7 +7,9 @@ Glean automatically harvests knowledge from your Claude Code sessions and transf
 [Español](./README.es.md) | [日本語](./README.ja.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/@deeeep/glean.svg)](https://www.npmjs.com/package/@deeeep/glean)
 [![Tests](https://img.shields.io/badge/tests-61%20passing-brightgreen.svg)]()
+[![DeepWiki](https://img.shields.io/badge/DeepWiki-Documentation-blue.svg)](https://deepwiki.com/lledellebell/glean)
 
 ## The Problem
 
@@ -77,6 +79,12 @@ Connect with external tools:
 - **Notion** - Sync learnings to databases
 
 ## Installation
+
+### npm
+
+```bash
+npm install @deeeep/glean
+```
 
 ### Manual Installation
 

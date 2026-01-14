@@ -7,7 +7,9 @@ Glean recolecta automáticamente el conocimiento de tus sesiones de Claude Code 
 [English](./README.md) | [日本語](./README.ja.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/@deeeep/glean.svg)](https://www.npmjs.com/package/@deeeep/glean)
 [![Tests](https://img.shields.io/badge/tests-61%20passing-brightgreen.svg)]()
+[![DeepWiki](https://img.shields.io/badge/DeepWiki-Documentación-blue.svg)](https://deepwiki.com/lledellebell/glean)
 
 ## El Problema
 

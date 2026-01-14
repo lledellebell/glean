@@ -2,6 +2,8 @@
 
 > **Never forget what you learn from AI coding sessions**
 
+<img width="1024" height="523" alt="image" src="https://github.com/user-attachments/assets/fd533eab-3292-4cf2-b4d4-28961a793e87" />
+
 Glean automatically harvests knowledge from your Claude Code sessions and transforms it into long-term memory using spaced repetition.
 
 [Español](./README.es.md) | [日本語](./README.ja.md)

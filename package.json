@@ -3,6 +3,36 @@
   "version": "0.1.0",
   "description": "Harvest knowledge from your AI coding sessions - Claude Code plugin suite",
   "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "bin": {
+    "glean": "./bin/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    },
+    "./spaced-repetition": {
+      "types": "./lib/spaced-repetition.d.ts",
+      "import": "./lib/spaced-repetition.js"
+    },
+    "./harvest-store": {
+      "types": "./lib/harvest-store.d.ts",
+      "import": "./lib/harvest-store.js"
+    },
+    "./insight-store": {
+      "types": "./lib/insight-store.d.ts",
+      "import": "./lib/insight-store.js"
+    },
+    "./learn-store": {
+      "types": "./lib/learn-store.d.ts",
+      "import": "./lib/learn-store.js"
+    },
+    "./bridge/*": {
+      "import": "./lib/bridge/*.js"
+    }
+  },
   "keywords": [
     "claude",
     "claude-code",
@@ -32,6 +62,7 @@
   },
   "files": [
     ".claude-plugin/",
+    "bin/",
     "commands/",
     "agents/",
     "plugins/",

@@ -14,7 +14,7 @@ Glean recolecta automaticamente el conocimiento de tus sesiones de Claude Code y
 [![GitHub forks](https://img.shields.io/github/forks/lledellebell/glean.svg)](https://github.com/lledellebell/glean/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/lledellebell/glean.svg)](https://github.com/lledellebell/glean/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/lledellebell/glean.svg)](https://github.com/lledellebell/glean/commits/main)
-[![Tests](https://img.shields.io/badge/tests-61%20passing-brightgreen.svg)]()
+[![CI](https://github.com/lledellebell/glean/actions/workflows/ci.yml/badge.svg)](https://github.com/lledellebell/glean/actions/workflows/ci.yml)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
 [![DeepWiki](https://img.shields.io/badge/DeepWiki-Documentacion-blue.svg)](https://deepwiki.com/lledellebell/glean)
 

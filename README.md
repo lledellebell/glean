@@ -16,7 +16,7 @@ Glean automatically harvests knowledge from your Claude Code sessions and transf
 [![GitHub last commit](https://img.shields.io/github/last-commit/lledellebell/glean.svg)](https://github.com/lledellebell/glean/commits/main)
 [![GitHub code size](https://img.shields.io/github/languages/code-size/lledellebell/glean.svg)](https://github.com/lledellebell/glean)
 [![GitHub contributors](https://img.shields.io/github/contributors/lledellebell/glean.svg)](https://github.com/lledellebell/glean/graphs/contributors)
-[![Tests](https://img.shields.io/badge/tests-61%20passing-brightgreen.svg)]()
+[![CI](https://github.com/lledellebell/glean/actions/workflows/ci.yml/badge.svg)](https://github.com/lledellebell/glean/actions/workflows/ci.yml)
 [![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
 [![DeepWiki](https://img.shields.io/badge/DeepWiki-Documentation-blue.svg)](https://deepwiki.com/lledellebell/glean)
 
@@ -118,16 +118,32 @@ Add to your Claude Code settings:
 ## Quick Start
 
 ```bash
-# 1. Start a coding session with Claude Code
+# 1. Run setup wizard
+npx @deeeep/glean init
+
+# 2. Start a coding session with Claude Code
 claude
 
-# 2. Do your work...
+# 3. Do your work...
 
-# 3. Harvest knowledge at session end
+# 4. Harvest knowledge at session end
 /glean
 
-# 4. Review your learnings later
+# 5. Review your learnings later
 /learn review
+```
+
+## CLI
+
+```bash
+# Setup wizard - configure Glean interactively
+npx @deeeep/glean init
+
+# Check current configuration
+npx @deeeep/glean status
+
+# Show help
+npx @deeeep/glean help
 ```
 
 ## Commands

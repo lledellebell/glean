@@ -1,5 +1,5 @@
 {
-  "name": "glean",
+  "name": "@lledellebell/glean",
   "version": "0.1.0",
   "description": "Harvest knowledge from your AI coding sessions - Claude Code plugin suite",
   "type": "module",

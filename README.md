@@ -1,4 +1,4 @@
-# Glean 🌾
+# Glean
 
 > **Never forget what you learn from AI coding sessions**
 
@@ -6,25 +6,34 @@ Glean automatically harvests knowledge from your Claude Code sessions and transf
 
 [Español](./README.es.md) | [日本語](./README.ja.md)
 
+<!-- Badges -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://img.shields.io/npm/v/@deeeep/glean.svg)](https://www.npmjs.com/package/@deeeep/glean)
+[![npm downloads](https://img.shields.io/npm/dm/@deeeep/glean.svg)](https://www.npmjs.com/package/@deeeep/glean)
+[![GitHub stars](https://img.shields.io/github/stars/lledellebell/glean.svg)](https://github.com/lledellebell/glean/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/lledellebell/glean.svg)](https://github.com/lledellebell/glean/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/lledellebell/glean.svg)](https://github.com/lledellebell/glean/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/lledellebell/glean.svg)](https://github.com/lledellebell/glean/commits/main)
+[![GitHub code size](https://img.shields.io/github/languages/code-size/lledellebell/glean.svg)](https://github.com/lledellebell/glean)
+[![GitHub contributors](https://img.shields.io/github/contributors/lledellebell/glean.svg)](https://github.com/lledellebell/glean/graphs/contributors)
 [![Tests](https://img.shields.io/badge/tests-61%20passing-brightgreen.svg)]()
+[![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
 [![DeepWiki](https://img.shields.io/badge/DeepWiki-Documentation-blue.svg)](https://deepwiki.com/lledellebell/glean)
 
 ## The Problem
 
 When AI coding sessions end, valuable information disappears:
 
-- 💡 Code patterns and conventions you discovered
-- ⚠️ Mistakes you made and how you fixed them
-- 📚 Concepts you learnt (forgotten by next week)
-- 🔧 Useful commands and workflows
+- Code patterns and conventions you discovered
+- Mistakes you made and how you fixed them
+- Concepts you learnt (forgotten by next week)
+- Useful commands and workflows
 
 **Glean** captures all of this automatically and helps you retain it permanently.
 
 ## Features
 
-### 🌾 Session Harvesting
+### Session Harvesting
 
 Analyse your coding session with 8 specialised AI agents running in parallel:
 
@@ -39,19 +48,19 @@ Analyse your coding session with 8 specialised AI agents running in parallel:
 | Mistake Analyzer | Error/mistake analysis |
 | Dedup Validator | Result deduplication |
 
-### 🧠 Spaced Repetition
+### Spaced Repetition
 
 Built-in SM-2 algorithm schedules reviews at optimal intervals:
 
 | Confidence | Next Review |
 |------------|-------------|
-| ⭐⭐⭐⭐⭐ | 30 days |
-| ⭐⭐⭐⭐ | 14 days |
-| ⭐⭐⭐ | 7 days |
-| ⭐⭐ | 3 days |
-| ⭐ | 1 day |
+| 5/5 | 30 days |
+| 4/5 | 14 days |
+| 3/5 | 7 days |
+| 2/5 | 3 days |
+| 1/5 | 1 day |
 
-### 🔌 Plugin Ecosystem
+### Plugin Ecosystem
 
 12 feature plugins for comprehensive session management:
 
@@ -70,7 +79,7 @@ Built-in SM-2 algorithm schedules reviews at optimal intervals:
 | `/notify` | Notification management |
 | `/stats` | Session statistics |
 
-### 🌉 Bridge Integrations
+### Bridge Integrations
 
 Connect with external tools:
 
@@ -238,6 +247,6 @@ MIT Licence - See [LICENSE](./LICENSE)
 
 ---
 
-> "Remember today what you learnt yesterday" 🧠
+> "Remember today what you learnt yesterday"
 
-**Star ⭐ this repo if Glean helps you learn!**
+**Star this repo if Glean helps you learn!**

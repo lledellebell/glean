@@ -1,4 +1,4 @@
-# Glean 🌾
+# Glean
 
 > **AIコーディングセッションで学んだことを忘れない**
 
@@ -6,25 +6,32 @@ GleanはClaude Codeセッションから自動的に知識を収穫し、間隔�
 
 [English](./README.md) | [Español](./README.es.md)
 
+<!-- Badges -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://img.shields.io/npm/v/@deeeep/glean.svg)](https://www.npmjs.com/package/@deeeep/glean)
+[![npm downloads](https://img.shields.io/npm/dm/@deeeep/glean.svg)](https://www.npmjs.com/package/@deeeep/glean)
+[![GitHub stars](https://img.shields.io/github/stars/lledellebell/glean.svg)](https://github.com/lledellebell/glean/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/lledellebell/glean.svg)](https://github.com/lledellebell/glean/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/lledellebell/glean.svg)](https://github.com/lledellebell/glean/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/lledellebell/glean.svg)](https://github.com/lledellebell/glean/commits/main)
 [![Tests](https://img.shields.io/badge/tests-61%20passing-brightgreen.svg)]()
+[![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
 [![DeepWiki](https://img.shields.io/badge/DeepWiki-ドキュメント-blue.svg)](https://deepwiki.com/lledellebell/glean)
 
 ## 問題
 
 AIコーディングセッションが終わると、貴重な情報が消えてしまいます：
 
-- 💡 発見したコードパターンと規約
-- ⚠️ 犯したミスとその修正方法
-- 📚 学んだコンセプト（来週には忘れる）
-- 🔧 便利なコマンドとワークフロー
+- 発見したコードパターンと規約
+- 犯したミスとその修正方法
+- 学んだコンセプト（来週には忘れる）
+- 便利なコマンドとワークフロー
 
 **Glean**はこれらすべてを自動的にキャプチャし、永続的に保持する手助けをします。
 
 ## 機能
 
-### 🌾 セッションハーベスト
+### セッションハーベスト
 
 8つの専門AIエージェントが並列で実行し、コーディングセッションを分析：
 
@@ -39,19 +46,19 @@ AIコーディングセッションが終わると、貴重な情報が消えて
 | Mistake Analyzer | エラー/ミス分析 |
 | Dedup Validator | 結果の重複排除 |
 
-### 🧠 間隔反復
+### 間隔反復
 
 内蔵SM-2アルゴリズムが最適な間隔でレビューをスケジュール：
 
 | 自信度 | 次のレビュー |
 |--------|-------------|
-| ⭐⭐⭐⭐⭐ | 30日 |
-| ⭐⭐⭐⭐ | 14日 |
-| ⭐⭐⭐ | 7日 |
-| ⭐⭐ | 3日 |
-| ⭐ | 1日 |
+| 5/5 | 30日 |
+| 4/5 | 14日 |
+| 3/5 | 7日 |
+| 2/5 | 3日 |
+| 1/5 | 1日 |
 
-### 🔌 プラグインエコシステム
+### プラグインエコシステム
 
 包括的なセッション管理のための12の機能プラグイン：
 
@@ -70,7 +77,7 @@ AIコーディングセッションが終わると、貴重な情報が消えて
 | `/notify` | 通知管理 |
 | `/stats` | セッション統計 |
 
-### 🌉 ブリッジ連携
+### ブリッジ連携
 
 外部ツールと接続：
 
@@ -79,6 +86,12 @@ AIコーディングセッションが終わると、貴重な情報が消えて
 - **Notion** - 学習をデータベースに同期
 
 ## インストール
+
+### npm
+
+```bash
+npm install @deeeep/glean
+```
 
 ### 手動インストール
 
@@ -173,6 +186,6 @@ MITライセンス - [LICENSE](./LICENSE)を参照
 
 ---
 
-> "昨日学んだことを今日覚えておく" 🧠
+> "昨日学んだことを今日覚えておく"
 
-**Gleanが学習に役立ったら⭐をください！**
+**Gleanが学習に役立ったらスターをください！**

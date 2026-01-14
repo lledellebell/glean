@@ -1,76 +1,83 @@
-# Glean 🌾
+# Glean
 
-> **Nunca olvides lo que aprendes en las sesiones de programación con IA**
+> **Nunca olvides lo que aprendes en las sesiones de programacion con IA**
 
-Glean recolecta automáticamente el conocimiento de tus sesiones de Claude Code y lo transforma en memoria a largo plazo usando repetición espaciada.
+Glean recolecta automaticamente el conocimiento de tus sesiones de Claude Code y lo transforma en memoria a largo plazo usando repeticion espaciada.
 
 [English](./README.md) | [日本語](./README.ja.md)
 
+<!-- Badges -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://img.shields.io/npm/v/@deeeep/glean.svg)](https://www.npmjs.com/package/@deeeep/glean)
+[![npm downloads](https://img.shields.io/npm/dm/@deeeep/glean.svg)](https://www.npmjs.com/package/@deeeep/glean)
+[![GitHub stars](https://img.shields.io/github/stars/lledellebell/glean.svg)](https://github.com/lledellebell/glean/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/lledellebell/glean.svg)](https://github.com/lledellebell/glean/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/lledellebell/glean.svg)](https://github.com/lledellebell/glean/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/lledellebell/glean.svg)](https://github.com/lledellebell/glean/commits/main)
 [![Tests](https://img.shields.io/badge/tests-61%20passing-brightgreen.svg)]()
-[![DeepWiki](https://img.shields.io/badge/DeepWiki-Documentación-blue.svg)](https://deepwiki.com/lledellebell/glean)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
+[![DeepWiki](https://img.shields.io/badge/DeepWiki-Documentacion-blue.svg)](https://deepwiki.com/lledellebell/glean)
 
 ## El Problema
 
-Cuando terminan las sesiones de programación con IA, información valiosa desaparece:
+Cuando terminan las sesiones de programacion con IA, informacion valiosa desaparece:
 
-- 💡 Patrones de código y convenciones que descubriste
-- ⚠️ Errores que cometiste y cómo los solucionaste
-- 📚 Conceptos que aprendiste (olvidados la próxima semana)
-- 🔧 Comandos y flujos de trabajo útiles
+- Patrones de codigo y convenciones que descubriste
+- Errores que cometiste y como los solucionaste
+- Conceptos que aprendiste (olvidados la proxima semana)
+- Comandos y flujos de trabajo utiles
 
-**Glean** captura todo esto automáticamente y te ayuda a retenerlo permanentemente.
+**Glean** captura todo esto automaticamente y te ayuda a retenerlo permanentemente.
 
-## Características
+## Caracteristicas
 
-### 🌾 Recolección de Sesiones
+### Recoleccion de Sesiones
 
-Analiza tu sesión de programación con 8 agentes de IA especializados ejecutándose en paralelo:
+Analiza tu sesion de programacion con 8 agentes de IA especializados ejecutandose en paralelo:
 
-| Agente | Propósito |
+| Agente | Proposito |
 |--------|-----------|
-| Session Analyzer | Generación de datos de recolección |
-| Doc Analyzer | Sugerencias de actualización de documentación |
-| Automation Finder | Detección de oportunidades de automatización |
-| Learning Extractor | Extracción de puntos de aprendizaje |
-| Followup Planner | Planificación de próximas tareas |
-| Pattern Recognizer | Detección de patrones de código |
-| Mistake Analyzer | Análisis de errores |
-| Dedup Validator | Deduplicación de resultados |
+| Session Analyzer | Generacion de datos de recoleccion |
+| Doc Analyzer | Sugerencias de actualizacion de documentacion |
+| Automation Finder | Deteccion de oportunidades de automatizacion |
+| Learning Extractor | Extraccion de puntos de aprendizaje |
+| Followup Planner | Planificacion de proximas tareas |
+| Pattern Recognizer | Deteccion de patrones de codigo |
+| Mistake Analyzer | Analisis de errores |
+| Dedup Validator | Deduplicacion de resultados |
 
-### 🧠 Repetición Espaciada
+### Repeticion Espaciada
 
-Algoritmo SM-2 integrado programa revisiones en intervalos óptimos:
+Algoritmo SM-2 integrado programa revisiones en intervalos optimos:
 
-| Confianza | Próxima Revisión |
+| Confianza | Proxima Revision |
 |-----------|------------------|
-| ⭐⭐⭐⭐⭐ | 30 días |
-| ⭐⭐⭐⭐ | 14 días |
-| ⭐⭐⭐ | 7 días |
-| ⭐⭐ | 3 días |
-| ⭐ | 1 día |
+| 5/5 | 30 dias |
+| 4/5 | 14 dias |
+| 3/5 | 7 dias |
+| 2/5 | 3 dias |
+| 1/5 | 1 dia |
 
-### 🔌 Ecosistema de Plugins
+### Ecosistema de Plugins
 
-12 plugins de características para gestión completa de sesiones:
+12 plugins de caracteristicas para gestion completa de sesiones:
 
-| Plugin | Descripción |
+| Plugin | Descripcion |
 |--------|-------------|
-| `/harvest` | Recolección de conocimiento de sesiones |
-| `/insight` | Extracción de patrones e insights |
-| `/learn` | Aprendizaje con repetición espaciada |
+| `/harvest` | Recoleccion de conocimiento de sesiones |
+| `/insight` | Extraccion de patrones e insights |
+| `/learn` | Aprendizaje con repeticion espaciada |
 | `/memory` | Memoria persistente (remember/recall) |
-| `/context` | Guardar/restaurar contexto de sesión |
-| `/plan` | Planificación y seguimiento de tareas |
-| `/pr` | Automatización de pull requests |
-| `/review` | Ayudante de revisión de código |
-| `/history` | Búsqueda de historial de sesiones |
-| `/sync` | Sincronización con herramientas externas |
-| `/notify` | Gestión de notificaciones |
-| `/stats` | Estadísticas de sesiones |
+| `/context` | Guardar/restaurar contexto de sesion |
+| `/plan` | Planificacion y seguimiento de tareas |
+| `/pr` | Automatizacion de pull requests |
+| `/review` | Ayudante de revision de codigo |
+| `/history` | Busqueda de historial de sesiones |
+| `/sync` | Sincronizacion con herramientas externas |
+| `/notify` | Gestion de notificaciones |
+| `/stats` | Estadisticas de sesiones |
 
-### 🌉 Integraciones Bridge
+### Integraciones Bridge
 
 Conecta con herramientas externas:
 
@@ -78,9 +85,15 @@ Conecta con herramientas externas:
 - **GitHub** - Crea issues desde tareas
 - **Notion** - Sincroniza aprendizajes a bases de datos
 
-## Instalación
+## Instalacion
 
-### Instalación Manual
+### npm
+
+```bash
+npm install @deeeep/glean
+```
+
+### Instalacion Manual
 
 ```bash
 # Clona al directorio de plugins
@@ -90,9 +103,9 @@ git clone https://github.com/lledellebell/glean.git ~/.claude/plugins/glean
 git clone https://github.com/lledellebell/glean.git ~/glean
 ```
 
-### Configuración
+### Configuracion
 
-Añade a tu configuración de Claude Code:
+Anade a tu configuracion de Claude Code:
 
 ```json
 {
@@ -100,18 +113,18 @@ Añade a tu configuración de Claude Code:
 }
 ```
 
-## Inicio Rápido
+## Inicio Rapido
 
 ```bash
-# 1. Inicia una sesión con Claude Code
+# 1. Inicia una sesion con Claude Code
 claude
 
 # 2. Haz tu trabajo...
 
-# 3. Recolecta conocimiento al final de la sesión
+# 3. Recolecta conocimiento al final de la sesion
 /glean
 
-# 4. Revisa tus aprendizajes después
+# 4. Revisa tus aprendizajes despues
 /learn review
 ```
 
@@ -120,11 +133,11 @@ claude
 ### Comandos Principales
 
 ```bash
-/glean              # Recolecta sesión actual (agentes paralelos)
+/glean              # Recolecta sesion actual (agentes paralelos)
 /glean --verbose    # Salida detallada con todos los resultados
 
-/harvest            # Recolección rápida de conocimiento
-/harvest --full     # Análisis completo
+/harvest            # Recoleccion rapida de conocimiento
+/harvest --full     # Analisis completo
 
 /insight            # Extraer insights
 /insight --type pattern   # Solo patrones
@@ -134,9 +147,9 @@ claude
 ### Comandos de Aprendizaje
 
 ```bash
-/learn add "React Query cachea por query key"  # Añadir aprendizaje
+/learn add "React Query cachea por query key"  # Anadir aprendizaje
 /learn list                                     # Ver aprendizajes
-/learn review                                   # Iniciar sesión de revisión
+/learn review                                   # Iniciar sesion de revision
 /learn quiz --topic react                       # Modo quiz
 ```
 
@@ -151,17 +164,17 @@ claude
 
 ```
 ~/.glean/
-├── harvests/     # Datos de recolección (JSON)
-├── insights/     # Insights extraídos
-├── learn/        # Items de aprendizaje con calendario de revisión
-├── contexts/     # Contextos de sesión guardados
+├── harvests/     # Datos de recoleccion (JSON)
+├── insights/     # Insights extraidos
+├── learn/        # Items de aprendizaje con calendario de revision
+├── contexts/     # Contextos de sesion guardados
 ├── history/      # Historial de sesiones
-└── config.json   # Configuración
+└── config.json   # Configuracion
 ```
 
 ## Contribuir
 
-¡Damos la bienvenida a contribuciones! Ver [CONTRIBUTING.md](./CONTRIBUTING.md).
+Damos la bienvenida a contribuciones! Ver [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Licencia
 
@@ -173,6 +186,6 @@ Licencia MIT - Ver [LICENSE](./LICENSE)
 
 ---
 
-> "Recuerda hoy lo que aprendiste ayer" 🧠
+> "Recuerda hoy lo que aprendiste ayer"
 
-**¡Dale ⭐ a este repo si Glean te ayuda a aprender!**
+**Dale estrella a este repo si Glean te ayuda a aprender!**

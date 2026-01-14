@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/lledellebell/glean/discussions
+    about: Ask questions and share ideas in Discussions
+  - name: Documentation
+    url: https://github.com/lledellebell/glean#readme
+    about: Check out the documentation first

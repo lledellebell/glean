@@ -1,0 +1,14 @@
+# Default owners for everything in the repo
+* @lledellebell
+
+# Core libraries
+/lib/ @lledellebell
+
+# Agents
+/agents/ @lledellebell
+
+# Plugins
+/plugins/ @lledellebell
+
+# Documentation
+*.md @lledellebell

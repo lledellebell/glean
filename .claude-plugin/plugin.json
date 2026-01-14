@@ -1,34 +1,39 @@
 {
-  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
-  "name": "glean",
+  "name": "glean-core",
   "version": "0.1.0",
   "description": "Harvest knowledge from your AI coding sessions",
   "author": {
     "name": "lledellebell",
-    "email": "lledellebell@users.noreply.github.com",
-    "url": "https://github.com/lledellebell/glean"
+    "email": "lledellebell@users.noreply.github.com"
   },
+  "homepage": "https://github.com/lledellebell/glean",
   "repository": "https://github.com/lledellebell/glean",
+  "license": "MIT",
   "keywords": [
     "session",
     "knowledge",
     "learning",
     "documentation",
     "productivity",
-    "analytics"
+    "analytics",
+    "spaced-repetition"
   ],
-  "license": "MIT",
-  "components": {
-    "commands": [
-      "../commands/glean.md",
-      "../commands/glean-history.md",
-      "../commands/glean-stats.md",
-      "../commands/glean-config.md",
-      "../commands/bridge.md"
-    ],
-    "hooks": [
-      "../hooks/auto-harvest.js",
-      "../hooks/review-reminder.js"
-    ]
-  }
+  "commands": [
+    "./commands/glean.md",
+    "./commands/glean-history.md",
+    "./commands/glean-stats.md",
+    "./commands/glean-config.md",
+    "./commands/bridge.md"
+  ],
+  "agents": [
+    "./agents/session-analyzer.md",
+    "./agents/doc-analyzer.md",
+    "./agents/automation-finder.md",
+    "./agents/learning-extractor.md",
+    "./agents/followup-planner.md",
+    "./agents/dedup-validator.md",
+    "./agents/pattern-recognizer.md",
+    "./agents/mistake-analyzer.md"
+  ],
+  "hooks": "./hooks/"
 }

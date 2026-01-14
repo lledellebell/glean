@@ -23,14 +23,12 @@
       "../commands/glean.md",
       "../commands/glean-history.md",
       "../commands/glean-stats.md",
-      "../commands/glean-config.md"
+      "../commands/glean-config.md",
+      "../commands/bridge.md"
     ],
-    "agents": [
-      "../agents/doc-analyzer.md",
-      "../agents/automation-finder.md",
-      "../agents/learning-extractor.md",
-      "../agents/followup-planner.md",
-      "../agents/dedup-validator.md"
+    "hooks": [
+      "../hooks/auto-harvest.js",
+      "../hooks/review-reminder.js"
     ]
   }
 }

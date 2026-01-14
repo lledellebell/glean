@@ -35,6 +35,7 @@
     "commands/",
     "agents/",
     "plugins/",
+    "lib/",
     "shared/",
     "docs/",
     "README.md",

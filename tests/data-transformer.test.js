@@ -51,13 +51,13 @@ describe('insightToObsidianNote', () => {
 
   it('pattern 유형이면 패턴 설명 포함', () => {
     const result = insightToObsidianNote(mockInsight);
-    assert.ok(result.content.includes('## 패턴 설명'));
+    assert.ok(result.content.includes('## Pattern Description'));
     assert.ok(result.content.includes(mockInsight.pattern.description));
   });
 
   it('antiPattern이 있으면 포함', () => {
     const result = insightToObsidianNote(mockInsight);
-    assert.ok(result.content.includes('## 피해야 할 방식'));
+    assert.ok(result.content.includes('## Anti-Pattern'));
     assert.ok(result.content.includes(mockInsight.pattern.antiPattern));
   });
 
@@ -86,10 +86,10 @@ describe('insightToObsidianNote - mistake type', () => {
   it('mistake 유형이면 4가지 섹션 포함', () => {
     const result = insightToObsidianNote(mockMistake);
 
-    assert.ok(result.content.includes('## 무엇이 잘못됐나'));
-    assert.ok(result.content.includes('## 왜 잘못됐나'));
-    assert.ok(result.content.includes('## 해결 방법'));
-    assert.ok(result.content.includes('## 방지책'));
+    assert.ok(result.content.includes('## What Went Wrong'));
+    assert.ok(result.content.includes('## Why It Was Wrong'));
+    assert.ok(result.content.includes('## How to Fix'));
+    assert.ok(result.content.includes('## Prevention'));
   });
 });
 
@@ -129,21 +129,21 @@ describe('learnToObsidianNote', () => {
 
   it('핵심 포인트가 목록으로 포함', () => {
     const result = learnToObsidianNote(mockLearnItem);
-    assert.ok(result.content.includes('## 핵심 포인트'));
+    assert.ok(result.content.includes('## Key Points'));
     assert.ok(result.content.includes('- 의존성 배열 관리'));
   });
 
   it('코드 예시가 코드 블록으로 포함', () => {
     const result = learnToObsidianNote(mockLearnItem);
-    assert.ok(result.content.includes('## 코드 예시'));
+    assert.ok(result.content.includes('## Code Example'));
     assert.ok(result.content.includes('```'));
     assert.ok(result.content.includes(mockLearnItem.content.codeExample));
   });
 
   it('복습 정보 섹션 포함', () => {
     const result = learnToObsidianNote(mockLearnItem);
-    assert.ok(result.content.includes('## 복습 정보'));
-    assert.ok(result.content.includes('복습 횟수: 3'));
+    assert.ok(result.content.includes('## Review Info'));
+    assert.ok(result.content.includes('Review Count: 3'));
   });
 
   it('filename이 topic과 id를 포함', () => {
@@ -256,42 +256,42 @@ describe('harvestToMarkdown', () => {
 
   it('제목이 harvest ID를 포함', () => {
     const md = harvestToMarkdown(mockHarvest);
-    assert.ok(md.includes('# 세션 수확: harvest_123'));
+    assert.ok(md.includes('# Session Harvest: harvest_123'));
   });
 
   it('세션 정보 포함', () => {
     const md = harvestToMarkdown(mockHarvest);
-    assert.ok(md.includes('프로젝트: my-project'));
+    assert.ok(md.includes('Project: my-project'));
   });
 
   it('요약 섹션 포함', () => {
     const md = harvestToMarkdown(mockHarvest);
-    assert.ok(md.includes('## 요약'));
+    assert.ok(md.includes('## Summary'));
     assert.ok(md.includes('인증 기능 구현'));
   });
 
   it('주요 작업 목록 포함', () => {
     const md = harvestToMarkdown(mockHarvest);
-    assert.ok(md.includes('## 주요 작업'));
+    assert.ok(md.includes('## Main Tasks'));
     assert.ok(md.includes('- JWT 토큰 구현'));
   });
 
   it('변경 파일 목록 포함', () => {
     const md = harvestToMarkdown(mockHarvest);
-    assert.ok(md.includes('## 변경 파일'));
+    assert.ok(md.includes('## Changed Files'));
     assert.ok(md.includes('lib/auth.js (created)'));
   });
 
   it('커밋 목록 포함', () => {
     const md = harvestToMarkdown(mockHarvest);
-    assert.ok(md.includes('## 커밋'));
+    assert.ok(md.includes('## Commits'));
     assert.ok(md.includes('feat: JWT 추가'));
     assert.ok(md.includes('abc123'));
   });
 
   it('인사이트 목록 포함', () => {
     const md = harvestToMarkdown(mockHarvest);
-    assert.ok(md.includes('## 인사이트'));
+    assert.ok(md.includes('## Insights'));
     assert.ok(md.includes('[pattern]'));
     assert.ok(md.includes('httpOnly 쿠키로 토큰 저장'));
   });

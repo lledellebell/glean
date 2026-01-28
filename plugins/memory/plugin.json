@@ -1,0 +1,7 @@
+{
+  "name": "glean-memory",
+  "version": "0.1.0",
+  "description": "Session memory management - remember and recall across sessions",
+  "category": "memory",
+  "commands": ["remember", "recall", "forget"]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "glean-marketplace",
+  "description": "Never forget what you learned from AI coding sessions - knowledge harvesting + spaced repetition + ecosystem integration",
+  "owner": {
+    "name": "lledellebell",
+    "email": "lledellebell@users.noreply.github.com"
+  },
+  "plugins": [
+    {
+      "name": "glean",
+      "source": "./",
+      "description": "Core Glean plugin - harvest knowledge from coding sessions"
+    },
+    {
+      "name": "glean-harvest",
+      "source": "./plugins/harvest",
+      "description": "[Core] Session knowledge harvesting engine"
+    },
+    {
+      "name": "glean-insight",
+      "source": "./plugins/insight",
+      "description": "[Core] Extract actionable insights from sessions"
+    },
+    {
+      "name": "glean-learn",
+      "source": "./plugins/learn",
+      "description": "[Core] Spaced repetition learning system"
+    }
+  ]
+}

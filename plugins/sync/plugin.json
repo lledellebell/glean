@@ -1,0 +1,8 @@
+{
+  "name": "glean-sync",
+  "version": "0.1.0",
+  "description": "Sync learnings and insights with external tools",
+  "category": "integrate",
+  "commands": ["sync"],
+  "integrations": ["notion", "obsidian", "github", "linear"]
+}

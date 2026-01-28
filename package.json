@@ -1,0 +1,49 @@
+{
+  "name": "glean",
+  "version": "0.1.0",
+  "description": "Harvest knowledge from your AI coding sessions - Claude Code plugin suite",
+  "type": "module",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "plugin",
+    "session",
+    "knowledge",
+    "productivity",
+    "ai",
+    "coding-assistant"
+  ],
+  "author": {
+    "name": "lledellebell",
+    "email": "lledellebell@users.noreply.github.com",
+    "url": "https://github.com/lledellebell"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lledellebell/glean.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lledellebell/glean/issues"
+  },
+  "homepage": "https://github.com/lledellebell/glean#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    ".claude-plugin/",
+    "commands/",
+    "agents/",
+    "plugins/",
+    "shared/",
+    "docs/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "echo 'No linting configured yet'",
+    "test": "node --test tests/*.test.js",
+    "test:watch": "node --test --watch tests/*.test.js",
+    "validate": "node scripts/validate-plugin.js"
+  }
+}

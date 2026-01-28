@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "glean-notify",
+  "version": "0.1.0",
+  "description": "Session notifications and alerts",
+  "author": {
+    "name": "lledellebell",
+    "email": "lledellebell@users.noreply.github.com",
+    "url": "https://github.com/lledellebell/glean"
+  },
+  "license": "MIT",
+  "components": {
+    "commands": [
+      "./commands/notify.md"
+    ]
+  }
+}

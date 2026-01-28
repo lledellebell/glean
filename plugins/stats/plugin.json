@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "glean-stats",
+  "version": "0.1.0",
+  "description": "Session statistics and productivity analytics",
+  "author": {
+    "name": "lledellebell",
+    "email": "lledellebell@users.noreply.github.com",
+    "url": "https://github.com/lledellebell/glean"
+  },
+  "license": "MIT",
+  "components": {
+    "commands": [
+      "./commands/stats.md"
+    ]
+  }
+}

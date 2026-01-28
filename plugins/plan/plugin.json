@@ -1,0 +1,7 @@
+{
+  "name": "glean-plan",
+  "version": "0.1.0",
+  "description": "Task planning and tracking across sessions",
+  "category": "flow",
+  "commands": ["plan", "tasks"]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "glean-harvest",
+  "version": "0.1.0",
+  "description": "Session knowledge harvesting - analyze and extract value from coding sessions",
+  "author": {
+    "name": "lledellebell",
+    "email": "lledellebell@users.noreply.github.com",
+    "url": "https://github.com/lledellebell/glean"
+  },
+  "license": "MIT",
+  "components": {
+    "commands": [
+      "./commands/harvest.md"
+    ]
+  }
+}

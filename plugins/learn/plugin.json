@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "glean-learn",
+  "version": "0.1.0",
+  "description": "Track learning progress and knowledge gaps",
+  "author": {
+    "name": "lledellebell",
+    "email": "lledellebell@users.noreply.github.com",
+    "url": "https://github.com/lledellebell/glean"
+  },
+  "license": "MIT",
+  "components": {
+    "commands": [
+      "./commands/learn.md"
+    ]
+  }
+}

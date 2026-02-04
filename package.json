@@ -1,6 +1,6 @@
 {
-  "name": "glean",
-  "version": "0.1.0",
+  "name": "@lledellebell/glean",
+  "version": "0.1.1",
   "description": "Harvest knowledge from your AI coding sessions - Claude Code plugin suite",
   "type": "module",
   "keywords": [
@@ -45,5 +45,8 @@
     "test": "node --test tests/*.test.js",
     "test:watch": "node --test --watch tests/*.test.js",
     "validate": "node scripts/validate-plugin.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }

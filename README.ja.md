@@ -103,6 +103,23 @@ npm install @lledellebell/glean
 git clone https://github.com/lledellebell/glean.git ~/.claude/plugins/glean
 ```
 
+### MCPサーバー（Cursor、Windsurf等）
+
+MCP設定に追加：
+
+```json
+{
+  "mcpServers": {
+    "glean": {
+      "command": "npx",
+      "args": ["-y", "@lledellebell/glean", "glean-mcp"]
+    }
+  }
+}
+```
+
+利用可能なMCPツール：`glean_find_similar`、`glean_save_learning`、`glean_get_context`、`glean_flashcard`、`glean_growth`など
+
 ## クイックスタート
 
 ```bash

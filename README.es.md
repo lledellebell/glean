@@ -103,6 +103,23 @@ npm install @lledellebell/glean
 git clone https://github.com/lledellebell/glean.git ~/.claude/plugins/glean
 ```
 
+### Servidor MCP (Cursor, Windsurf, etc.)
+
+Agrega a tu configuracion MCP:
+
+```json
+{
+  "mcpServers": {
+    "glean": {
+      "command": "npx",
+      "args": ["-y", "@lledellebell/glean", "glean-mcp"]
+    }
+  }
+}
+```
+
+Herramientas MCP disponibles: `glean_find_similar`, `glean_save_learning`, `glean_get_context`, `glean_flashcard`, `glean_growth`, etc.
+
 ## Inicio Rapido
 
 ```bash

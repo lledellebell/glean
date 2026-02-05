@@ -107,7 +107,54 @@ npm install @lledellebell/glean
 git clone https://github.com/lledellebell/glean.git ~/.claude/plugins/glean
 ```
 
-### Configuration
+### MCP Server (for Cursor, Windsurf, etc.)
+
+Add to your MCP settings:
+
+```json
+{
+  "mcpServers": {
+    "glean": {
+      "command": "npx",
+      "args": ["-y", "@lledellebell/glean", "glean-mcp"]
+    }
+  }
+}
+```
+
+Or install globally:
+
+```bash
+npm install -g @lledellebell/glean
+```
+
+Then add to MCP settings:
+
+```json
+{
+  "mcpServers": {
+    "glean": {
+      "command": "glean-mcp"
+    }
+  }
+}
+```
+
+#### Available MCP Tools
+
+| Tool | Description |
+|------|-------------|
+| `glean_find_similar` | Find similar error patterns from past sessions |
+| `glean_save_learning` | Save a daily learning or insight |
+| `glean_get_today` | Get all learnings saved today |
+| `glean_get_recent` | Get recent learnings from past N days |
+| `glean_get_context` | Get relevant learnings for current project |
+| `glean_flashcard` | Get next flashcard for review |
+| `glean_complete_review` | Complete a flashcard review |
+| `glean_growth` | Get learning growth statistics |
+| `glean_stats` | Get overall Glean statistics |
+
+### Configuration (Claude Code)
 
 Add to your Claude Code settings:
 

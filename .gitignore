@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# IDE & Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Test & Coverage
+coverage/
+.nyc_output/
+
+# Glean Data (user-specific, should not be committed)
+# These are stored in ~/.glean/ by default, but just in case
+.glean-data/
+*.glean-cache
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS files
+Thumbs.db
+ehthumbs.db
+
+# Package manager locks (choose one, uncomment others)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Internal Documents (not for public)
+docs/
+
+# Agent Prompts (core logic, keep private)
+agents/
+
+# Plugin internal implementations
+plugins/*/agents/
+
+# Claude Code Development Config (internal workflow, keep private)
+.claude/
+CLAUDE.md

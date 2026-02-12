@@ -87,6 +87,17 @@ AIコーディングセッションが終わると、貴重な情報が消えて
 
 ## インストール
 
+### Claude Code Plugin Marketplace（推奨）
+
+<p align="center">
+  <img src="./assets/glean.png" alt="Glean" width="300" />
+</p>
+
+```bash
+claude plugin marketplace add lledellebell/glean
+claude plugin install glean-core@glean
+```
+
 ### npm
 
 ```bash

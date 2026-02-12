@@ -4,7 +4,7 @@
  */
 
 // Learning item source
-export type LearnSource = 'manual' | 'harvest' | 'insight';
+export type LearnSource = 'manual' | 'harvest' | 'insight' | 'backfill';
 
 // Confidence level (1-5)
 export type ConfidenceLevel = 1 | 2 | 3 | 4 | 5;

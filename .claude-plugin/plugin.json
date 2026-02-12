@@ -23,7 +23,8 @@
     "./commands/glean-history.md",
     "./commands/glean-stats.md",
     "./commands/glean-config.md",
-    "./commands/bridge.md"
+    "./commands/bridge.md",
+    "./commands/glean-backfill.md"
   ],
   "agents": [
     "./agents/session-analyzer.md",
@@ -33,6 +34,7 @@
     "./agents/followup-planner.md",
     "./agents/dedup-validator.md",
     "./agents/pattern-recognizer.md",
-    "./agents/mistake-analyzer.md"
+    "./agents/mistake-analyzer.md",
+    "./agents/backfill-extractor.md"
   ]
 }

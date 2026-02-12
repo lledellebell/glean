@@ -35,7 +35,7 @@ Wenn KI-Coding-Sessions enden, gehen wertvolle Informationen verloren:
 
 ### Session-Ernte
 
-Analysieren Sie Ihre Coding-Session mit 8 spezialisierten KI-Agenten, die parallel arbeiten:
+Analysieren Sie Ihre Coding-Session mit 9 spezialisierten KI-Agenten, die parallel arbeiten:
 
 | Agent | Zweck |
 |-------|-------|
@@ -46,6 +46,7 @@ Analysieren Sie Ihre Coding-Session mit 8 spezialisierten KI-Agenten, die parall
 | Followup Planner | Planung der nächsten Aufgaben |
 | Pattern Recognizer | Erkennung von Code-Patterns |
 | Mistake Analyzer | Analyse von Fehlern |
+| Backfill Extractor | Rückwirkende Analyse vergangener Sessions |
 | Dedup Validator | Deduplizierung der Ergebnisse |
 
 ### Verteilte Wiederholung
@@ -164,6 +165,10 @@ npx @deeeep/glean help
 /glean              # Aktuelle Session ernten (parallele Agenten)
 /glean --verbose    # Detaillierte Ausgabe mit allen Agenten-Ergebnissen
 
+/glean-backfill             # Vergangene Sessions rückwirkend analysieren (aktuelles Projekt)
+/glean-backfill --all       # Alle Projekte rückwirkend analysieren
+/glean-backfill --dry-run   # Vorschau ohne Speicherung
+
 /harvest            # Schnelle Wissensernte
 /harvest --full     # Umfassende Analyse
 
@@ -241,7 +246,7 @@ Erstellen Sie `~/.glean/config.json`:
 # Alle Tests ausführen
 npm test
 
-# 61 Tests abdeckend:
+# 83 Tests abdeckend:
 # - Algorithmus für verteilte Wiederholung
 # - Daten-Transformer
 # - Plugin-Erkennung

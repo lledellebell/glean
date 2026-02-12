@@ -33,7 +33,7 @@ Cuando terminan las sesiones de programacion con IA, informacion valiosa desapar
 
 ### Recoleccion de Sesiones
 
-Analiza tu sesion de programacion con 8 agentes de IA especializados ejecutandose en paralelo:
+Analiza tu sesion de programacion con 9 agentes de IA especializados ejecutandose en paralelo:
 
 | Agente | Proposito |
 |--------|-----------|
@@ -44,6 +44,7 @@ Analiza tu sesion de programacion con 8 agentes de IA especializados ejecutandos
 | Followup Planner | Planificacion de proximas tareas |
 | Pattern Recognizer | Deteccion de patrones de codigo |
 | Mistake Analyzer | Analisis de errores |
+| Backfill Extractor | Analisis retroactivo de sesiones historicas |
 | Dedup Validator | Deduplicacion de resultados |
 
 ### Repeticion Espaciada
@@ -145,6 +146,10 @@ claude
 ```bash
 /glean              # Recolecta sesion actual (agentes paralelos)
 /glean --verbose    # Salida detallada con todos los resultados
+
+/glean-backfill             # Extraer de sesiones pasadas (proyecto actual)
+/glean-backfill --all       # Extraer de todos los proyectos
+/glean-backfill --dry-run   # Vista previa sin guardar
 
 /harvest            # Recoleccion rapida de conocimiento
 /harvest --full     # Analisis completo

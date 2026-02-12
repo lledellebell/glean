@@ -33,7 +33,7 @@ AIコーディングセッションが終わると、貴重な情報が消えて
 
 ### セッションハーベスト
 
-8つの専門AIエージェントが並列で実行し、コーディングセッションを分析：
+9つの専門AIエージェントが並列で実行し、コーディングセッションを分析：
 
 | エージェント | 目的 |
 |-------------|------|
@@ -44,6 +44,7 @@ AIコーディングセッションが終わると、貴重な情報が消えて
 | Followup Planner | 次のタスク計画 |
 | Pattern Recognizer | コードパターン検出 |
 | Mistake Analyzer | エラー/ミス分析 |
+| Backfill Extractor | 過去セッションの遡及分析 |
 | Dedup Validator | 結果の重複排除 |
 
 ### 間隔反復
@@ -145,6 +146,10 @@ claude
 ```bash
 /glean              # 現在のセッションをハーベスト（並列エージェント）
 /glean --verbose    # 全エージェント結果を含む詳細出力
+
+/glean-backfill             # 過去セッションから遡及抽出（現在のプロジェクト）
+/glean-backfill --all       # 全プロジェクトの遡及抽出
+/glean-backfill --dry-run   # 保存せずプレビュー
 
 /harvest            # クイックナレッジハーベスト
 /harvest --full     # 包括的分析

@@ -35,7 +35,7 @@ Quand les sessions de codage IA se terminent, des informations précieuses dispa
 
 ### Récolte de session
 
-Analysez votre session de codage avec 8 agents IA spécialisés fonctionnant en parallèle :
+Analysez votre session de codage avec 9 agents IA spécialisés fonctionnant en parallèle :
 
 | Agent | Objectif |
 |-------|----------|
@@ -46,6 +46,7 @@ Analysez votre session de codage avec 8 agents IA spécialisés fonctionnant en 
 | Followup Planner | Planification des prochaines tâches |
 | Pattern Recognizer | Détection de patterns de code |
 | Mistake Analyzer | Analyse des erreurs/fautes |
+| Backfill Extractor | Analyse rétrospective des sessions passées |
 | Dedup Validator | Déduplication des résultats |
 
 ### Répétition espacée
@@ -164,6 +165,10 @@ npx @deeeep/glean help
 /glean              # Récolter la session en cours (agents parallèles)
 /glean --verbose    # Sortie détaillée avec tous les résultats d'agents
 
+/glean-backfill             # Extraire des sessions passées (projet actuel)
+/glean-backfill --all       # Extraire de tous les projets
+/glean-backfill --dry-run   # Aperçu sans enregistrer
+
 /harvest            # Récolte rapide de connaissances
 /harvest --full     # Analyse complète
 
@@ -241,7 +246,7 @@ Créez `~/.glean/config.json` :
 # Exécuter tous les tests
 npm test
 
-# 61 tests couvrant :
+# 83 tests couvrant :
 # - Algorithme de répétition espacée
 # - Transformateurs de données
 # - Détection de plugins

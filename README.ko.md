@@ -35,7 +35,7 @@ AI 코딩 세션이 끝나면 소중한 정보가 사라집니다:
 
 ### 세션 수확
 
-8개의 전문 AI 에이전트가 병렬로 코딩 세션을 분석합니다:
+9개의 전문 AI 에이전트가 병렬로 코딩 세션을 분석합니다:
 
 | 에이전트 | 목적 |
 |----------|------|
@@ -46,6 +46,7 @@ AI 코딩 세션이 끝나면 소중한 정보가 사라집니다:
 | Followup Planner | 다음 작업 계획 |
 | Pattern Recognizer | 코드 패턴 탐지 |
 | Mistake Analyzer | 오류/실수 분석 |
+| Backfill Extractor | 과거 세션 소급 분석 |
 | Dedup Validator | 결과 중복 제거 |
 
 ### 간격 반복
@@ -164,6 +165,10 @@ npx @deeeep/glean help
 /glean              # 현재 세션 수확 (병렬 에이전트)
 /glean --verbose    # 모든 에이전트 결과를 포함한 상세 출력
 
+/glean-backfill             # 과거 세션에서 소급 추출 (현재 프로젝트)
+/glean-backfill --all       # 전체 프로젝트 소급 추출
+/glean-backfill --dry-run   # 저장 없이 미리보기
+
 /harvest            # 빠른 지식 수확
 /harvest --full     # 종합 분석
 
@@ -241,7 +246,7 @@ npx @deeeep/glean help
 # 전체 테스트 실행
 npm test
 
-# 61개 테스트 커버리지:
+# 83개 테스트 커버리지:
 # - 간격 반복 알고리즘
 # - 데이터 변환기
 # - 플러그인 감지

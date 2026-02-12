@@ -35,7 +35,7 @@ When AI coding sessions end, valuable information disappears:
 
 ### Session Harvesting
 
-Analyse your coding session with 8 specialised AI agents running in parallel:
+Analyse your coding session with 9 specialised AI agents running in parallel:
 
 | Agent | Purpose |
 |-------|---------|
@@ -46,6 +46,7 @@ Analyse your coding session with 8 specialised AI agents running in parallel:
 | Followup Planner | Next task planning |
 | Pattern Recognizer | Code pattern detection |
 | Mistake Analyzer | Error/mistake analysis |
+| Backfill Extractor | Historical session analysis |
 | Dedup Validator | Result deduplication |
 
 ### Spaced Repetition
@@ -164,6 +165,10 @@ npx @deeeep/glean help
 /glean              # Harvest current session (parallel agents)
 /glean --verbose    # Detailed output with all agent results
 
+/glean-backfill             # Backfill from past sessions (current project)
+/glean-backfill --all       # Backfill all projects
+/glean-backfill --dry-run   # Preview without storing
+
 /harvest            # Quick knowledge harvest
 /harvest --full     # Comprehensive analysis
 
@@ -241,7 +246,7 @@ Create `~/.glean/config.json`:
 # Run all tests
 npm test
 
-# 61 tests covering:
+# 83 tests covering:
 # - Spaced repetition algorithm
 # - Data transformers
 # - Plugin detection

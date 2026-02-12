@@ -34,6 +34,5 @@
     "./agents/dedup-validator.md",
     "./agents/pattern-recognizer.md",
     "./agents/mistake-analyzer.md"
-  ],
-  "hooks": "./hooks/hooks.json"
+  ]
 }

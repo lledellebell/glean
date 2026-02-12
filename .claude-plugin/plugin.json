@@ -35,5 +35,5 @@
     "./agents/pattern-recognizer.md",
     "./agents/mistake-analyzer.md"
   ],
-  "hooks": "./hooks/"
+  "hooks": "./hooks/hooks.json"
 }

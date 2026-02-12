@@ -4,7 +4,7 @@
 
 Glean automatically harvests knowledge from your Claude Code sessions and transforms it into long-term memory using spaced repetition.
 
-[Español](./README.es.md) | [日本語](./README.ja.md)
+[Español](./README.es.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md)
 
 <!-- Badges -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

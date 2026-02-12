@@ -89,6 +89,17 @@ Connect with external tools:
 
 ## Installation
 
+### Claude Code Plugin Marketplace (Recommended)
+
+<p align="center">
+  <img src="./assets/glean.png" alt="Glean" width="300" />
+</p>
+
+```bash
+claude plugin marketplace add lledellebell/glean
+claude plugin install glean-core@glean
+```
+
 ### npm
 
 ```bash

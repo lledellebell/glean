@@ -20,7 +20,7 @@
     },
     {
       "name": "glean-harvest",
-      "source": "harvest",
+      "source": "./plugins/harvest",
       "description": "Session knowledge harvesting engine",
       "version": "0.1.0",
       "category": "productivity",
@@ -28,7 +28,7 @@
     },
     {
       "name": "glean-insight",
-      "source": "insight",
+      "source": "./plugins/insight",
       "description": "Extract actionable insights from sessions",
       "version": "0.1.0",
       "category": "productivity",
@@ -36,7 +36,7 @@
     },
     {
       "name": "glean-learn",
-      "source": "learn",
+      "source": "./plugins/learn",
       "description": "Spaced repetition learning system with SM-2 algorithm",
       "version": "0.1.0",
       "category": "learning",
@@ -44,7 +44,7 @@
     },
     {
       "name": "glean-memory",
-      "source": "memory",
+      "source": "./plugins/memory",
       "description": "Persistent memory with remember/recall commands",
       "version": "0.1.0",
       "category": "productivity",
@@ -52,7 +52,7 @@
     },
     {
       "name": "glean-context",
-      "source": "context",
+      "source": "./plugins/context",
       "description": "Session context save and restore",
       "version": "0.1.0",
       "category": "productivity",
@@ -60,7 +60,7 @@
     },
     {
       "name": "glean-plan",
-      "source": "plan",
+      "source": "./plugins/plan",
       "description": "Development planning and task tracking",
       "version": "0.1.0",
       "category": "productivity",
@@ -68,7 +68,7 @@
     },
     {
       "name": "glean-pr",
-      "source": "pr",
+      "source": "./plugins/pr",
       "description": "Pull request workflow automation",
       "version": "0.1.0",
       "category": "workflow",
@@ -76,7 +76,7 @@
     },
     {
       "name": "glean-review",
-      "source": "review",
+      "source": "./plugins/review",
       "description": "Code review helper with checklists",
       "version": "0.1.0",
       "category": "workflow",
@@ -84,7 +84,7 @@
     },
     {
       "name": "glean-history",
-      "source": "history",
+      "source": "./plugins/history",
       "description": "Session history search and exploration",
       "version": "0.1.0",
       "category": "productivity",
@@ -92,7 +92,7 @@
     },
     {
       "name": "glean-sync",
-      "source": "sync",
+      "source": "./plugins/sync",
       "description": "External tool synchronisation (Notion, Obsidian, GitHub)",
       "version": "0.1.0",
       "category": "integration",
@@ -100,7 +100,7 @@
     },
     {
       "name": "glean-notify",
-      "source": "notify",
+      "source": "./plugins/notify",
       "description": "Notification and reminder management",
       "version": "0.1.0",
       "category": "productivity",
@@ -108,7 +108,7 @@
     },
     {
       "name": "glean-stats",
-      "source": "stats",
+      "source": "./plugins/stats",
       "description": "Session statistics and productivity analysis",
       "version": "0.1.0",
       "category": "analytics",

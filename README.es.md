@@ -4,7 +4,7 @@
 
 Glean recolecta automaticamente el conocimiento de tus sesiones de Claude Code y lo transforma en memoria a largo plazo usando repeticion espaciada.
 
-[English](./README.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md)
+[English](./README.md) | [日本語](./README.ja.md) | [한국어](./README.ko.md) | [Français](./README.fr.md) | [Deutsch](./README.de.md)
 
 <!-- Badges -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -94,7 +94,6 @@ Conecta con herramientas externas:
 </p>
 
 ```bash
-claude plugin marketplace add lledellebell/glean
 claude plugin install glean-core@glean
 ```
 

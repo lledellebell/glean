@@ -4,7 +4,7 @@
 
 Glean은 Claude Code 세션에서 자동으로 지식을 수확하고, 간격 반복을 통해 장기 기억으로 전환합니다.
 
-[English](./README.md) | [Español](./README.es.md) | [日本語](./README.ja.md)
+[English](./README.md) | [Español](./README.es.md) | [日本語](./README.ja.md) | [Français](./README.fr.md) | [Deutsch](./README.de.md)
 
 <!-- Badges -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -96,7 +96,6 @@ AI 코딩 세션이 끝나면 소중한 정보가 사라집니다:
 </p>
 
 ```bash
-claude plugin marketplace add lledellebell/glean
 claude plugin install glean-core@glean
 ```
 

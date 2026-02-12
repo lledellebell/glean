@@ -4,7 +4,7 @@
 
 GleanはClaude Codeセッションから自動的に知識を収穫し、間隔反復を使って長期記憶に変換します。
 
-[English](./README.md) | [Español](./README.es.md) | [한국어](./README.ko.md)
+[English](./README.md) | [Español](./README.es.md) | [한국어](./README.ko.md) | [Français](./README.fr.md) | [Deutsch](./README.de.md)
 
 <!-- Badges -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -94,7 +94,6 @@ AIコーディングセッションが終わると、貴重な情報が消えて
 </p>
 
 ```bash
-claude plugin marketplace add lledellebell/glean
 claude plugin install glean-core@glean
 ```
 

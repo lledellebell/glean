@@ -8,8 +8,8 @@ Glean automatically harvests knowledge from your Claude Code sessions and transf
 
 <!-- Badges -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://img.shields.io/npm/v/@deeeep/glean.svg)](https://www.npmjs.com/package/@deeeep/glean)
-[![npm downloads](https://img.shields.io/npm/dm/@deeeep/glean.svg)](https://www.npmjs.com/package/@deeeep/glean)
+[![GitHub Package](https://img.shields.io/github/v/release/lledellebell/glean.svg)](https://github.com/lledellebell/glean/packages)
+[![GitHub Release](https://img.shields.io/github/downloads/lledellebell/glean/total.svg)](https://github.com/lledellebell/glean/packages)
 [![GitHub stars](https://img.shields.io/github/stars/lledellebell/glean.svg)](https://github.com/lledellebell/glean/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/lledellebell/glean.svg)](https://github.com/lledellebell/glean/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/lledellebell/glean.svg)](https://github.com/lledellebell/glean/issues)
@@ -103,7 +103,7 @@ claude plugin install glean-core@glean
 ### npm
 
 ```bash
-npm install @deeeep/glean
+npm install @lledellebell/glean --registry=https://npm.pkg.github.com
 ```
 
 ### Manual Installation
@@ -130,7 +130,7 @@ Add to your Claude Code settings:
 
 ```bash
 # 1. Run setup wizard
-npx @deeeep/glean init
+npx @lledellebell/glean init
 
 # 2. Start a coding session with Claude Code
 claude
@@ -148,13 +148,13 @@ claude
 
 ```bash
 # Setup wizard - configure Glean interactively
-npx @deeeep/glean init
+npx @lledellebell/glean init
 
 # Check current configuration
-npx @deeeep/glean status
+npx @lledellebell/glean status
 
 # Show help
-npx @deeeep/glean help
+npx @lledellebell/glean help
 ```
 
 ## Commands

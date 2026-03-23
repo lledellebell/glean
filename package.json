@@ -1,6 +1,6 @@
 {
   "name": "@lledellebell/glean",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Harvest knowledge from your AI coding sessions - Claude Code plugin suite with MCP server",
   "type": "module",
   "bin": {

@@ -1,6 +1,6 @@
 {
   "name": "glean-core",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "description": "Harvest knowledge from your AI coding sessions",
   "author": {
     "name": "lledellebell",
@@ -24,7 +24,11 @@
     "./commands/glean-stats.md",
     "./commands/glean-config.md",
     "./commands/bridge.md",
-    "./commands/glean-backfill.md"
+    "./commands/glean-backfill.md",
+    "./commands/glean-explore.md",
+    "./commands/glean-plan.md",
+    "./commands/glean-hud.md",
+    "./commands/glean-doctor.md"
   ],
   "agents": [
     "./agents/session-analyzer.md",

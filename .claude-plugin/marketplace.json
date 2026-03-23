@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Never forget what you learned from AI coding sessions - knowledge harvesting + spaced repetition + ecosystem integration",
-    "version": "0.1.0",
+    "version": "0.4.0",
     "pluginRoot": "./plugins"
   },
   "plugins": [
@@ -14,7 +14,7 @@
       "name": "glean-core",
       "source": "./",
       "description": "Core Glean plugin with session harvesting and analysis agents",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "category": "productivity",
       "keywords": ["session", "harvest", "knowledge", "agents"]
     },
@@ -22,7 +22,7 @@
       "name": "glean-harvest",
       "source": "./plugins/harvest",
       "description": "Session knowledge harvesting engine",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "category": "productivity",
       "keywords": ["harvest", "session", "knowledge"]
     },
@@ -30,7 +30,7 @@
       "name": "glean-insight",
       "source": "./plugins/insight",
       "description": "Extract actionable insights from sessions",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "category": "productivity",
       "keywords": ["insight", "pattern", "mistake"]
     },
@@ -38,7 +38,7 @@
       "name": "glean-learn",
       "source": "./plugins/learn",
       "description": "Spaced repetition learning system with SM-2 algorithm",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "category": "learning",
       "keywords": ["learning", "spaced-repetition", "review"]
     },
@@ -46,7 +46,7 @@
       "name": "glean-memory",
       "source": "./plugins/memory",
       "description": "Persistent memory with remember/recall commands",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "category": "productivity",
       "keywords": ["memory", "remember", "recall"]
     },
@@ -54,7 +54,7 @@
       "name": "glean-context",
       "source": "./plugins/context",
       "description": "Session context save and restore",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "category": "productivity",
       "keywords": ["context", "session", "restore"]
     },
@@ -62,7 +62,7 @@
       "name": "glean-plan",
       "source": "./plugins/plan",
       "description": "Development planning and task tracking",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "category": "productivity",
       "keywords": ["plan", "task", "tracking"]
     },
@@ -70,7 +70,7 @@
       "name": "glean-pr",
       "source": "./plugins/pr",
       "description": "Pull request workflow automation",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "category": "workflow",
       "keywords": ["pr", "pull-request", "github"]
     },
@@ -78,7 +78,7 @@
       "name": "glean-review",
       "source": "./plugins/review",
       "description": "Code review helper with checklists",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "category": "workflow",
       "keywords": ["review", "code-review", "checklist"]
     },
@@ -86,7 +86,7 @@
       "name": "glean-history",
       "source": "./plugins/history",
       "description": "Session history search and exploration",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "category": "productivity",
       "keywords": ["history", "session", "search"]
     },
@@ -94,7 +94,7 @@
       "name": "glean-sync",
       "source": "./plugins/sync",
       "description": "External tool synchronisation (Notion, Obsidian, GitHub)",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "category": "integration",
       "keywords": ["sync", "obsidian", "notion", "github"]
     },
@@ -102,7 +102,7 @@
       "name": "glean-notify",
       "source": "./plugins/notify",
       "description": "Notification and reminder management",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "category": "productivity",
       "keywords": ["notify", "reminder", "alert"]
     },
@@ -110,7 +110,7 @@
       "name": "glean-stats",
       "source": "./plugins/stats",
       "description": "Session statistics and productivity analysis",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "category": "analytics",
       "keywords": ["stats", "analytics", "productivity"]
     }

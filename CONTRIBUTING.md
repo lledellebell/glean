@@ -73,11 +73,17 @@ glean/
 │   ├── notify/        # Notifications
 │   └── stats/         # Statistics
 ├── lib/               # Core libraries
+│   ├── paths.js            # Shared path constants
 │   ├── spaced-repetition.js
 │   ├── harvest-store.js
 │   ├── insight-store.js
 │   ├── learn-store.js
-│   └── bridge/        # External integrations
+│   ├── knowledge-search.js # Unified knowledge search
+│   ├── plan-store.js       # Learning plan management
+│   ├── session-linker.js   # Cross-session linking
+│   ├── doctor.js           # Health diagnostics
+│   ├── history-parser.js   # Session history parser
+│   └── bridge/             # External integrations
 ├── hooks/             # Event hooks
 ├── tests/             # Test files
 └── types/             # TypeScript definitions

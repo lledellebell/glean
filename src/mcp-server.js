@@ -43,11 +43,14 @@ import {
 } from '../lib/growth-visualizer.js';
 
 import LearnStore from '../lib/learn-store.js';
+import HarvestStore from '../lib/harvest-store.js';
+import InsightStore from '../lib/insight-store.js';
+import { VERSION } from '../lib/index.js';
 
 const server = new Server(
   {
     name: 'glean',
-    version: '0.2.0'
+    version: VERSION
   },
   {
     capabilities: {
@@ -209,6 +212,123 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
         inputSchema: {
           type: 'object',
           properties: {}
+        }
+      },
+      {
+        name: 'glean_save_harvest',
+        description: 'Save a session harvest',
+        inputSchema: {
+          type: 'object',
+          properties: {
+            session: {
+              type: 'object',
+              description: 'Session info (project, duration, etc.)',
+              properties: {
+                project: { type: 'string' },
+                duration: { type: 'number' }
+              }
+            },
+            summary: {
+              type: 'object',
+              description: 'Session summary',
+              properties: {
+                description: { type: 'string' }
+              }
+            },
+            changes: {
+              type: 'object',
+              description: 'Files and commits changed'
+            },
+            insights: {
+              type: 'array',
+              items: { type: 'object' },
+              description: 'Insights discovered during session'
+            }
+          }
+        }
+      },
+      {
+        name: 'glean_get_harvests',
+        description: 'Get recent session harvests',
+        inputSchema: {
+          type: 'object',
+          properties: {
+            limit: {
+              type: 'number',
+              description: 'Maximum number of results (default: 10)'
+            },
+            project: {
+              type: 'string',
+              description: 'Filter by project name (optional)'
+            }
+          }
+        }
+      },
+      {
+        name: 'glean_save_insight',
+        description: 'Save an insight (pattern, mistake, optimization, or learning)',
+        inputSchema: {
+          type: 'object',
+          properties: {
+            type: {
+              type: 'string',
+              enum: ['pattern', 'mistake', 'optimization', 'learning'],
+              description: 'Insight type'
+            },
+            title: {
+              type: 'string',
+              description: 'Insight title'
+            },
+            content: {
+              type: 'string',
+              description: 'Insight content'
+            },
+            context: {
+              type: 'object',
+              description: 'Context info (project, error, etc.)',
+              properties: {
+                project: { type: 'string' },
+                error: { type: 'string' }
+              }
+            },
+            solution: {
+              type: 'string',
+              description: 'Solution or recommendation (optional)'
+            },
+            tags: {
+              type: 'array',
+              items: { type: 'string' },
+              description: 'Tags for categorization (optional)'
+            }
+          },
+          required: ['type', 'title', 'content']
+        }
+      },
+      {
+        name: 'glean_search_insights',
+        description: 'Search insights by type, project, or tags',
+        inputSchema: {
+          type: 'object',
+          properties: {
+            type: {
+              type: 'string',
+              enum: ['pattern', 'mistake', 'optimization', 'learning'],
+              description: 'Filter by insight type (optional)'
+            },
+            project: {
+              type: 'string',
+              description: 'Filter by project name (optional)'
+            },
+            tags: {
+              type: 'array',
+              items: { type: 'string' },
+              description: 'Filter by tags (optional)'
+            },
+            status: {
+              type: 'string',
+              description: 'Filter by status (optional)'
+            }
+          }
         }
       }
     ]
@@ -398,6 +518,91 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
         return {
           content: [{ type: 'text', text }]
+        };
+      }
+
+      case 'glean_save_harvest': {
+        const result = HarvestStore.saveHarvest({
+          session: args.session,
+          summary: args.summary,
+          changes: args.changes,
+          insights: args.insights,
+          timestamp: new Date().toISOString()
+        });
+
+        return {
+          content: [{
+            type: 'text',
+            text: `Harvest saved: ${result.id} (${result.path})`
+          }]
+        };
+      }
+
+      case 'glean_get_harvests': {
+        const harvests = HarvestStore.getRecentHarvests(
+          args.limit || 10,
+          args.project || null
+        );
+
+        if (harvests.length === 0) {
+          return {
+            content: [{ type: 'text', text: 'No harvests found.' }]
+          };
+        }
+
+        const text = harvests.map((h, i) =>
+          `${i + 1}. [${h.id}] ${h.project || 'unknown'} - ${h.summary || 'no summary'} (${h.filesChanged} files, ${h.insightsCount} insights)`
+        ).join('\n');
+
+        return {
+          content: [{
+            type: 'text',
+            text: `Recent harvests (${harvests.length}):\n${text}`
+          }]
+        };
+      }
+
+      case 'glean_save_insight': {
+        const result = InsightStore.saveInsight({
+          type: args.type,
+          title: args.title,
+          content: args.content,
+          context: args.context,
+          solution: args.solution,
+          meta: { tags: args.tags || [] }
+        });
+
+        return {
+          content: [{
+            type: 'text',
+            text: `Insight saved: "${args.title}" (ID: ${result.id}, type: ${args.type})`
+          }]
+        };
+      }
+
+      case 'glean_search_insights': {
+        const results = InsightStore.searchInsights({
+          type: args.type,
+          project: args.project,
+          tags: args.tags,
+          status: args.status
+        });
+
+        if (results.length === 0) {
+          return {
+            content: [{ type: 'text', text: 'No insights found.' }]
+          };
+        }
+
+        const text = results.slice(0, 20).map((r, i) =>
+          `${i + 1}. [${r.type}] ${r.title} (${r.status}, ${r.project || 'unknown'})`
+        ).join('\n');
+
+        return {
+          content: [{
+            type: 'text',
+            text: `Insights (${results.length} total):\n${text}`
+          }]
         };
       }
 

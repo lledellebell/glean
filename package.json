@@ -37,11 +37,14 @@
   },
   "files": [
     ".claude-plugin/",
+    "agents/",
     "commands/",
+    "hooks/",
     "plugins/",
     "shared/",
     "lib/",
     "src/",
+    "types/",
     "README.md",
     "LICENSE"
   ],

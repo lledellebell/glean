@@ -65,9 +65,11 @@
     "bin/",
     "commands/",
     "agents/",
+    "hooks/",
     "plugins/",
     "lib/",
     "shared/",
+    "types/",
     "docs/",
     "README.md",
     "LICENSE"

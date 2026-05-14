@@ -29,7 +29,7 @@ jobs:
         run: npm test
 
       - name: Publish to npm
-        run: npm publish --access public
+        run: npm publish --access public --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -43,12 +43,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node.js (install/test via npm registry)
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@lledellebell'
+          registry-url: 'https://registry.npmjs.org'
           cache: 'npm'
 
       - name: Install dependencies
@@ -57,9 +56,12 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Update package name for GitHub Packages
-        run: |
-          sed -i 's/"@deeeep\/glean"/"@lledellebell\/glean"/' package.json
+      - name: Switch registry to GitHub Packages for publish
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@lledellebell'
 
       - name: Publish to GitHub Packages
         run: npm publish

@@ -24,7 +24,7 @@ Glean is a Claude Code plugin suite for session knowledge harvesting and learnin
 
 ### Prerequisites
 
-- Node.js 18+
+- Node.js 24.22.2 LTS (`.nvmrc`)
 - Claude Code CLI
 - Git
 
